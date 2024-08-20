@@ -54,6 +54,14 @@ const Projects = [
       logo: "MR",
       link : "https://hero-page-kappa.vercel.app/"
     },
+    {
+      id: 7,
+      name: "Form data",
+      description: "A simple form data that save input and then takes you to the next page",
+      imageUrl: "/image/formData.png",
+      logo: "MR",
+      link : "https://form-data-psi.vercel.app/"
+    },
 ]
   
 
