@@ -49,7 +49,7 @@ const Projects = [
   {
     id: 6,
     name: "Hero page",
-    description: "A Simple Herp page",
+    description: "A Simple Hero page",
     imageUrl: "/image/newHero.png",
     logo: "MR",
     link : "https://hero-page-kappa.vercel.app/"
