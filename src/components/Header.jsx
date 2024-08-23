@@ -224,7 +224,7 @@ export default function Header() {
           } w-full md:block md:w-auto`}
           id="navbar-solid-bg"
         >
-          <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+          <ul className="flex flex-col lg:space-y-0 space-y-8 font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent lg:items-center items-start dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
               <NavLink
                 to="/about"
@@ -245,7 +245,7 @@ export default function Header() {
               </NavLink>
             </li>
 
-            <li className="p-4">
+            <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>

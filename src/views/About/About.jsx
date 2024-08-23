@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 export default function About() {
     return (
-      <main className="px-36 py-10 space-y-14 ">
-        <div className="w-full flex justify-between lg:flex-row flex-col">
-          <div className=" h-2/4 lg:w-5/12 w-full flex flex-col gap-4 justify-center ">
+      <main className="lg:px-36 px-6 py-10 space-y-14 ">
+        <div className="w-full  flex justify-between lg:flex-row flex-col">
+          <div className=" lg:h-2/4 h-full lg:w-5/12 w-full flex flex-col gap-4 justify-center">
             <div className="w-full h-1/5">
-              <h1 className=" text-4xl font-bold mb-6 ">Who am I?</h1>
+              <h1 className=" lg:text-4xl text-2xl font-bold lg:mb-6 mb-3 ">Who am I?</h1>
             </div>
             <div className="bg-[url('/image/cropped.jpg')] bg-contain bg-center bg-no-repeat w-full h-4/5">
             <img
@@ -13,7 +15,7 @@ export default function About() {
               className="h-full w-full object-cover"
             /></div>
           </div>
-          <div className=" h-2/4 lg:w-6/12 w-full flex flex-col gap-4 justify-center">
+          <div className=" lg:h-2/4 h:full lg:w-6/12 w-full flex flex-col gap-4 justify-center">
             <p className="text-lg text-left font-normal">
               I’m Adekunle Micheak, a Software Engineer based in Nigeria.
             </p>
@@ -53,8 +55,8 @@ export default function About() {
           </div>
         </div>
   
-        <div className="w-full flex justify-between">
-          <div className=" h-2/4 w-6/12  flex flex-col gap-4 justify-center">
+        <div className="w-full lg:flex-row flex-col flex justify-between">
+          <div className=" lg:h-full h-2/4 lg:w-6/12 w-full  flex flex-col gap-4 justify-center">
             <h1 className=" text-4xl font-bold mb-2"> Additional skills</h1>
   
             <p>
@@ -69,24 +71,26 @@ export default function About() {
             <li>Cloud infrastructure and deployment</li>
             <li>System architecture</li>
             <li>Performance tuning and debugging </li>
-  
+            <NavLink to = "/projects">
             <button
-              className=" py-3 px-4 w-48 font-medium text-medium border border-gray-300 rounded-sm hover:bg-red-600 hover:border-red-600  hover:shadow-none  hover:text-white cursor-pointer shadow-[4px_4px_0px_-1px_rgba(0,0,0,1)]
-  "
+              className=" py-3 px-4 w-48 font-medium text-medium border border-gray-300 rounded-sm hover:bg-red-600 hover:border-red-600  hover:shadow-none  hover:text-white cursor-pointer shadow-[4px_4px_0px_-1px_rgba(0,0,0,1)]"
             >
               View Past works
             </button>
+
+            </NavLink>
+
           </div>
-          <div className=" h-2/4 w-5/12 flex flex-col gap-4 justify-center ">
-            <div className="w-full h-1/5"></div>
-            <div div className="bg-blue-300 h-full w-full profile">
+          <div className=" lg:h-full bg-red-200 h-2/4 lg:w-6/12 w-full ">
+            {/* <div className="w-full h-1/5"></div> */}
+
             <img
               src="/image/additionalSkill.png"
               alt="solution"
               className="h-full w-full object-cover"
             />
               {" "}
-            </div>
+            
           </div>
         </div>
   
